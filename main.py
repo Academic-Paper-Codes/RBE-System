@@ -1,8 +1,8 @@
 import json
-from MRBE import *
+from TesRBE import *
 from MRBE_P import *
-from Improve_MRBE import *
-from Improve_MRBE_P import *
+from MTesRBE import *
+from Improve_MTesRBE import *
 
 # Simulated blockchain storage
 class Blockchain:
@@ -162,25 +162,25 @@ def main():
             print("Invalid User ID. Please enter an integer.")
 
     print("\nPlease choose which module you want to run:")
-    print("1. MRBE")
-    print("2. MRBE-P")
-    print("3. MRBE*")
-    print("4. MRBE*-P")
+    print("1. TesRBE")
+    # print("2. MRBE-P")
+    print("2. MTesRBE*")
+    print("3. MTesRBE*")
 
     try:
         choice = int(input("Enter the number of your choice (1-4): "))
         if choice == 1:
             module = MRBE(security_param=128, N=1000, n=10, nP=5)
-            module_name = "MRBE"
+            module_name = "TesRBE"
+        # elif choice == 2:
+        #     module = MRBE_P(lambda_param=16, N=100, n=10, nP=5)
+        #     module_name = "MRBE-P"
         elif choice == 2:
-            module = MRBE_P(lambda_param=16, N=100, n=10, nP=5)
-            module_name = "MRBE-P"
-        elif choice == 3:
             module = MRBEStar(security_param=128)
-            module_name = "MRBE*"
-        elif choice == 4:
+            module_name = "MTesRBE"
+        elif choice == 3:
             module = MRBEStarP(security_param=128)
-            module_name = "MRBE*-P"
+            module_name = "MTesRBE*"
         else:
             print("Invalid choice. Please restart and select a valid option.")
             return
