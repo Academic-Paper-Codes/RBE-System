@@ -1,4 +1,8 @@
 # MRBE-and-Web-3.0-Communications
+
+## Python version 3.11 
+Server with an AMD Ryzen 9 7945HX with Radeon Graphics and NVIDIA GeForce RTX 4070
+
 ## Overview
 The MRBE System is a cryptographic and blockchain simulation framework designed for secure data storage and processing. It integrates several cryptographic modules (TesRBE, MRBE_P, MTesRBE, Improve_MTesRBE) and simulates blockchain operations for data management.
 
