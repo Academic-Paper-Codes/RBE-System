@@ -1,4 +1,4 @@
-# MRBE-and-Decentralized-Communications
+# RBE-and-Decentralized-Communications
 
 ## Python version 3.11 Server with an AMD Ryzen 9 7945HX with Radeon Graphics and NVIDIA GeForce RTX 4070
 
